@@ -19,6 +19,7 @@ const initForm = {
   zipcode: "",
   portfolio: [],
   expectations: "",
+  accept: ""
 };
 
 export const FormProvider = ({ children }) => {
@@ -71,9 +72,18 @@ export const FormProvider = ({ children }) => {
     setForm(newForm);
   };
 
+  const addFormFour = (expectations) => {
+    const newForm = {
+      ...form,
+      expectations,
+    };
+    localStorage.setItem("formFour", JSON.stringify(newForm));
+    setForm(newForm);
+  };
+
   return (
     <FormContext.Provider
-      value={{ form, addFormOne, addFormTwo, addFormThree }}
+      value={{ form, addFormOne, addFormTwo, addFormThree, addFormFour }}
     >
       {children}
     </FormContext.Provider>

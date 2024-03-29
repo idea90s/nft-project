@@ -3,7 +3,10 @@ import MainLayout from "../layouts/MainLayout";
 import FormOne from "../form/FormOne";
 import FormTwo from "../form/FormTwo";
 import FormThree from "../form/FormThree";
+import FormFour from "../form/FormFour";
 import Success from "../form/Success";
+import FormFive from "../form/FormFive";
+import FormSix from "../form/FormSix";
 
 const FormNft = () => {
   const [activeForm, setActiveForm] = useState("FormOne");
@@ -39,6 +42,15 @@ const FormNft = () => {
           )}
           {activeForm === "FormThree" && (
             <FormThree onChangeForm={handleFormChange} />
+          )}
+          {activeForm === "FormFour" && (
+            <FormFour onChangeForm={handleFormChange} />
+          )}
+          {activeForm === "FormFive" && (
+            <FormFive onChangeForm={handleFormChange} />
+          )}
+          {activeForm === "FormSix" && (
+            <FormSix onChangeForm={handleFormChange} />
           )}
           {activeForm === "Success" && <Success />}
         </div>

@@ -66,7 +66,7 @@ const Home = () => {
         <button
           onClick={goToForm}
           type="button"
-          className="transform transition-transform duration-500 hover:scale-105 z-50 text-2xl py-4 w-full md:w-64 border-2 border-b-8 rounded-md bg-[white] text-secondary font-bold"
+          className="transform transition-transform duration-500 hover:scale-105 z-50 text-2xl py-4 w-full md:w-64 border-2 border-b-8 border-secondary rounded-md bg-gradient-to-br from-[#ff58b7] to-[#f9a50a] text-white font-bold"
         >
           ส่ง NFT
         </button>

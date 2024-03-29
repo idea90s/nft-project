@@ -34,7 +34,7 @@ const FormThree = ({ onChangeForm }) => {
       alert("💡 กรุณากรอกข้อมูลให้ครบทุกฟิลด์ก่อนนะคะ แล้วกดถัดไปได้เลยค่ะ 🙏🏻");
     } else {
       addFormThree(formData.avatar, formData.portfolio);
-      onChangeForm("Success");
+      onChangeForm("FormFour");
     }
   };
 
@@ -42,6 +42,7 @@ const FormThree = ({ onChangeForm }) => {
     e.preventDefault();
     onChangeForm("FormTwo");
   };
+
   return (
     <>
       <div className="flex items-center justify-center gap-3 border-2 border-b-8 rounded-md p-6 mt-10 text-[white] bg-gradient-to-bl from-[#471eae]/50 via-[#000]/90 to-primary shadow-md shadow-[#c045a944]/10">
@@ -117,7 +118,7 @@ const FormThree = ({ onChangeForm }) => {
                 type="submit"
                 className="border-2 border-b-8 rounded-md w-full py-3 bg-secondary bg-gradient-to-br from-[#5e67f0] to-[#9c0091] border-secondary/70 transform transition-transform duration-700 hover:scale-95 hover:bg-secondary hover:bg-gradient-to-bl hover:from-[#ed9d5b]/70 hover:to-[#9c0091]/70 text-xl"
               >
-                ส่งข้อมูล NFT
+                ถัดไป
               </button>
             </div>
           </div>
